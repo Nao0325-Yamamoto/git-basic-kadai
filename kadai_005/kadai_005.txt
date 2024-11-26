@@ -1,0 +1,24 @@
+(base) naokiyamamoto@naokinoiMac git % mkdir git_challenge
+(base) naokiyamamoto@naokinoiMac git % cd git_challenge 
+(base) naokiyamamoto@naokinoiMac git_challenge % git init
+Initialized empty Git repository in /Users/naokiyamamoto/Documents/SAMURAI/git/git_challenge/.git/
+(base) naokiyamamoto@naokinoiMac git_challenge % touch hello_world.txt
+
+(base) naokiyamamoto@naokinoiMac git_challenge % echo 'Hello, World!' > hello_world.txt 
+(base) naokiyamamoto@naokinoiMac git_challenge % less hello_world.txt 
+(base) naokiyamamoto@naokinoiMac git_challenge % git add hello_world.txt 
+(base) naokiyamamoto@naokinoiMac git_challenge % git commit -m "hello_worldの追記"
+[main (root-commit) eb96ee3] hello_worldの追記
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+(base) naokiyamamoto@naokinoiMac git_challenge % echo 'こんにちは、世界!' > hello_world.txt
+(base) naokiyamamoto@naokinoiMac git_challenge % git add hello_world.txt
+(base) naokiyamamoto@naokinoiMac git_challenge % git commit -m "日本語訳を追記"
+[main 688118d] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+(base) naokiyamamoto@naokinoiMac git_challenge % git log --oneline
+688118d (HEAD -> main) 日本語訳を追記
+eb96ee3 hello_worldの追記
+
